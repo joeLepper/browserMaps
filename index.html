@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Title</title>
+  <link rel="stylesheet" href="css/main.css"/>
+  
+</head>
+<body>
+  <div class='page-title'><h1>Scott and Joe's Browser Tree Map Dealie</h1></div>
+
+  <div class="control-holder">
+    <p>To begin, sign in using a Google Account with access to a website's analytics</p>
+    <div class="accounts-list-container">
+      <form class="accounts-form">
+        <ul class="accounts-list"></ul>
+      </form>
+    </div>
+    <button id="authorize-button" style="visibility: hidden">sign in </button>
+    <button id="make-api-call-button" style="visibility: hidden">Get Visits</button>
+  </div>
+
+  <div class='map-container'>
+    <h2 class='map-title'></h2>
+    
+    <div class="legend"></div>
+    <div class="map">
+      <canvas id='visualize'>Your browser doesn't support canvas, which is too bad, really.</canvas>
+    </div>
+  </div>
+
+  </table>
+  <script type="text/javascript" src="lib/jquery_1_9.min.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
+  <script type="text/javascript" src="https://apis.google.com/js/client.js?onload=handleClientLoad"></script>
+</body>
+</html>
