@@ -48,7 +48,11 @@ var browserObj = (function(){
 				 , viewObj     : _viewObj }
 })()
 
-  , clientId = '810156177674.apps.googleusercontent.com'
+  // development
+  // , clientId = '810156177674.apps.googleusercontent.com'
+
+  // production
+  . clientId = '810156177674-i3qbab1j5q3lme5cvdbrpr1jk6slebci.apps.googleusercontent.com'
   , apiKey   = 'AIzaSyCsTwQ2i-ZWIajBKJpZoOjNbmCZBdJZ_FQ'
   , scopes   = 'https://www.googleapis.com/auth/analytics.readonly'
 
